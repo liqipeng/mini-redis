@@ -68,6 +68,9 @@ pub const DEFAULT_PORT: &str = "6379";
 /// and handled during normal execution when a partial frame is received on a
 /// socket. `std::error::Error` is implemented for `parse::Error` which allows
 /// it to be converted to `Box<dyn std::error::Error>`.
+/// 
+/// TODO：dyn作用
+/// TODO：+ 表示什么意义
 pub type Error = Box<dyn std::error::Error + Send + Sync>;
 
 /// A specialized `Result` type for mini-redis operations.

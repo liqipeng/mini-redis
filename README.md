@@ -4,10 +4,20 @@
 [Redis](https://redis.io) client and server built with
 [Tokio](https://tokio.rs).
 
+`mini-redis`是一个不完整的、惯用的基于[Tokio](https://tokio.rs)构建的[Redis](https://redis.io)客户端和服务器端实现。
+
 The intent of this project is to provide a larger example of writing a Tokio
 application.
 
+这个项目的目的在于提供一个大型的Tokio应用程序样例。
+
 **Disclaimer** Please don't use mini-redis in production. This project is
+intended to be a learning resource, and omits various parts of the Redis
+protocol because implementing them would not introduce any new concepts. We will
+not add new features because you need them in your project — use one of the
+fully featured alternatives instead.
+
+**声明** 请勿将mini-redis用于生产环境。This project is
 intended to be a learning resource, and omits various parts of the Redis
 protocol because implementing them would not introduce any new concepts. We will
 not add new features because you need them in your project — use one of the

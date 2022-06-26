@@ -52,10 +52,13 @@ pub struct Message {
 }
 
 /// Establish a connection with the Redis server located at `addr`.
+/// 与位于`addr`的Redis服务器建立连接
 ///
 /// `addr` may be any type that can be asynchronously converted to a
 /// `SocketAddr`. This includes `SocketAddr` and strings. The `ToSocketAddrs`
 /// trait is the Tokio version and not the `std` version.
+/// 
+/// `addr` 是一个可以异步转换为`SocketAddr`的任意类型，包括`SocketAddr`和strings。这个`ToSocketAddrs`的trait是Tokio的版本而不是`std`版本。
 ///
 /// # Examples
 ///
